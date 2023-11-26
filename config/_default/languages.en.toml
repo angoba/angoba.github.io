@@ -8,9 +8,9 @@ title = "Juan Barrero"
   isoCode = "en"
   rtl = false
   dateFormat = "2 January 2006"
-  #logo = "img/9.png"
+  logo = "img/9.png"
   secondaryLogo = "img/9.png"
-  description = "My awesome website"
+  description = "Let me think"
   # copyright = "Copy, _right?_ :thinking_face:"
 
 [author]
