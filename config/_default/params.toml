@@ -45,7 +45,7 @@ disableImageZoom = true
   cardView = true
   cardViewScreenWidth = false
   layoutBackgroundBlur = true # only used when layout equals background
-  mainSections = ["Blog"]
+  mainSections = ["Posts", "Music"]
 
 [article]
   showDate = true
