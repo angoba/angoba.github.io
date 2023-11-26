@@ -1,7 +1,7 @@
 languageCode = "en"
 languageName = "English"
 weight = 1
-title = "Juan Barrero"
+title = "Personal Blog"
 
 [params]
   displayName = "EN"
@@ -16,7 +16,7 @@ title = "Juan Barrero"
 [author]
    name = "Juan Barrero"
    #image = "img/profile4.png"
-   headline = "I'm a dropout, let me think."
+   headline = "On AI, Math, and other uniportant things."
    bio = "Let me think"
    links = [
      { email = "mailto:hello@your_domain.com" },
@@ -58,7 +58,7 @@ title = "Juan Barrero"
 #     { tumblr = "https://username.tumblr.com" },
 #     { twitch = "https://twitch.tv/username" },
 #     { twitter = "https://twitter.com/username" },
-     { x-twitter = "https://twitter.com/username" },
+#     { x-twitter = "https://twitter.com/username" },
 #     { whatsapp = "https://wa.me/phone-number" },
      { youtube = "https://youtube.com/username" }
 #     { ko-fi = "https://ko-fi.com/username" },
