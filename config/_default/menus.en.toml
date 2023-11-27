@@ -11,7 +11,7 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
-  name = "Posts"
+  name = "Blog"
   pageRef = "posts"
   weight = 10
 
@@ -26,14 +26,14 @@
 
 [[main]]
   name = "Preálgebra"
-  parent = "El País de los Números"
+  parent = "AoPS"
   #pageRef = "https://youtube.com"
   url = "https://youtube.com"
   weight = 20
 
 [[main]]
   name = "Álgebra 1"
-  parent = "El País de los Números"
+  parent = "AoPS"
   #pageRef = ""
   url = "https://youtube.com"
   weight = 30
