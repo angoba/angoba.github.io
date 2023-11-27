@@ -21,7 +21,7 @@
   weight = 5
 
 [[main]]
-  name = "El País de los Números"
+  name = "AoPS"
   weight = 20
 
 [[main]]
@@ -38,54 +38,54 @@
   url = "https://youtube.com"
   weight = 30
 
-[[main]]
-  name = "Conteo y Probabilidad 1"
-  parent = "El País de los Números"
-  #pageRef = ""
-  url = "https://youtube.com"
-  weight = 35
+#[[main]]
+#  name = "Conteo y Probabilidad 1"
+#  parent = "El País de los Números"
+#  pageRef = ""
+#  url = "https://youtube.com"
+#  weight = 35
 
-[[main]]
-  name = "Introducción a la Geometría"
-  parent = "El País de los Números"
-  #pageRef = ""
-  url = "https://youtube.com"
-  weight = 40
+#[[main]]
+#  name = "Introducción a la Geometría"
+#  parent = "El País de los Números"
+#  #pageRef = ""
+#  url = "https://youtube.com"
+#  weight = 40
 
-[[main]]
-  name = "Teoría Numérica"
-  parent = "El País de los Números"
-  #pageRef = ""
-  url = "https://youtube.com"
-  weight = 50
+#[[main]]
+#  name = "Teoría Numérica"
+#  parent = "El País de los Números"
+#  #pageRef = ""
+#  url = "https://youtube.com"
+#  weight = 50
 
-[[main]]
-  name = "Álgebra 2"
-  parent = "El País de los Números"
-  #pageRef = ""
-  url = "https://youtube.com"
-  weight = 60
+#[[main]]
+#  name = "Álgebra 2"
+#  parent = "El País de los Números"
+#  #pageRef = ""
+#  url = "https://youtube.com"
+#  weight = 60
 
-[[main]]
-  name = "Conteo y Probabilidad 2"
-  parent = "El País de los Números"
-  #pageRef = ""
-  url = "https://youtube.com"
-  weight = 70
+#[[main]]
+#  name = "Conteo y Probabilidad 2"
+#  parent = "El País de los Números"
+#  #pageRef = ""
+#  url = "https://youtube.com"
+#  weight = 70
 
-[[main]]
-  name = "Precálculo"
-  parent = "El País de los Números"
-  #pageRef = ""
-  url = "https://youtube.com"
-  weight = 80
+#[[main]]
+#  name = "Precálculo"
+#  parent = "El País de los Números"
+#  #pageRef = ""
+#  url = "https://youtube.com"
+#  weight = 80
 
-[[main]]
-  name = "Cálculo"
-  parent = "El País de los Números"
-  #pageRef = ""
-  url = "https://youtube.com"
-  weight = 90
+#[[main]]
+#  name = "Cálculo"
+#  parent = "El País de los Números"
+#  #pageRef = ""
+#  url = "https://youtube.com"
+#  weight = 90
 
 #[[subnavigation]]
 #  name = "An interesting topic"
