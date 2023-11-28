@@ -38,7 +38,7 @@ disableImageZoom = true
 
 [homepage]
   layout = "background" # valid options: page, profile, hero, card, background, custom
-  homepageImage = "img/paramo.jpg" # used in: hero, and card
+  homepageImage = "img/paramo.JPG" # used in: hero, and card
   showRecent = true
   showRecentItems = 10
   showMoreLink = true
