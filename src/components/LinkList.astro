@@ -1,0 +1,28 @@
+---
+interface Item {
+  href?: string;
+  label: string;
+  meta?: string;
+}
+interface Props {
+  items: Item[];
+  inline?: boolean;
+}
+const { items, inline = false } = Astro.props;
+---
+{inline ? (
+  <div class="inline-links">
+    {items.map((item) => (
+      <a href={item.href ?? '#'}>{item.label}</a>
+    ))}
+  </div>
+) : (
+  <ul class="stacked-links">
+    {items.map((item) => (
+      <li>
+        <a href={item.href ?? '#'}>{item.label}</a>
+        {item.meta && <span class="meta">{item.meta}</span>}
+      </li>
+    ))}
+  </ul>
+)}

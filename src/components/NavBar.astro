@@ -1,0 +1,10 @@
+---
+import { navLinks } from '../data/site';
+---
+<header class="topbar">
+  <nav class="nav-links" aria-label="Primary">
+    {navLinks.map((item) => (
+      <a href={item.href}>{item.label}</a>
+    ))}
+  </nav>
+</header>

@@ -1,0 +1,37 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SectionTitle from '../components/SectionTitle.astro';
+import LinkList from '../components/LinkList.astro';
+import ProfileBlock from '../components/ProfileBlock.astro';
+import PostScroller from '../components/PostScroller.astro';
+import SocialBar from '../components/SocialBar.astro';
+import { getCollection } from 'astro:content';
+import { materialLinks, socials } from '../data/site';
+
+const posts = (await getCollection('posts'))
+  .filter((entry) => !entry.data.draft)
+  .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
+  .map((entry) => ({
+    href: `/posts/${entry.slug}/`,
+    label: entry.data.title,
+    meta: entry.data.date
+  }));
+
+const introBody = [
+  "Hello! I'm Juan, a Statistics student from Colombia. I enjoy solving mathematical problems and programming, particularly competitive programming. My interests in statistics include statistical inference, mathematical statistics, and the theoretical foundations of machine learning.",
+  "My broader interests include mathematics, physics, history, and philosophy. I speak English, Spanish, Italian, and French. I also maintain a blog and enjoy playing games, watching movies, and motorsports."
+];
+---
+<BaseLayout title="The Far Side">
+  <SectionTitle title="Posts" level={1} />
+  <PostScroller items={posts} />
+
+  <SectionTitle title="About" level={1} />
+  <ProfileBlock title="Juan Barrero" body={introBody} />
+
+  <SectionTitle title="Materials" level={1} />
+  <LinkList inline items={materialLinks} />
+
+
+  <SocialBar items={socials} />
+</BaseLayout>

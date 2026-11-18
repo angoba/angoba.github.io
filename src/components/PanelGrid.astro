@@ -1,0 +1,25 @@
+---
+interface Item {
+  href?: string;
+  title?: string;
+  subtitle?: string;
+  label?: string;
+  emoji?: string;
+}
+interface Props {
+  items: Item[];
+  columns?: 'two' | 'three' | 'four';
+}
+const { items, columns = 'three' } = Astro.props;
+---
+<div class={`panel-grid ${columns}`}>
+  {items.map((item) => (
+    <a class="panel-card" href={item.href ?? '#'}>
+      <span class="panel-emoji">{item.emoji ?? '📁'}</span>
+      <span class="panel-text">
+        {item.title && <strong>{item.title}</strong>}
+        {(item.label || item.subtitle) && <span>{item.label ?? item.subtitle}</span>}
+      </span>
+    </a>
+  ))}
+</div>

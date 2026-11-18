@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import LinkList from '../../components/LinkList.astro';
+
+const notes = (await getCollection('notes')).map((entry) => ({
+  href: `/notes/${entry.slug}/`,
+  label: entry.data.title,
+  meta: entry.data.date
+}));
+---
+<BaseLayout title="Notes">
+  <h1 class="simple-page-title">Notes</h1>
+  <LinkList items={notes} />
+  <a class="back-link" href="/">Back to home</a>
+</BaseLayout>

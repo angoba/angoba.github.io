@@ -1,0 +1,10 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import LinkList from '../../components/LinkList.astro';
+import { materialLinks } from '../../data/site';
+---
+<BaseLayout title="Materials">
+  <h1 class="simple-page-title">Materials</h1>
+  <LinkList items={materialLinks} />
+  <a class="back-link" href="/">Back to home</a>
+</BaseLayout>

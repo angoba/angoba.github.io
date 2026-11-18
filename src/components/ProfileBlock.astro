@@ -1,0 +1,17 @@
+---
+interface Props {
+  title: string;
+  body: string[];
+}
+const { title, body } = Astro.props;
+---
+<section class="about-grid">
+  <div class="about-copy">
+    <h3>{title}</h3>
+    {body.map((paragraph) => <p>{paragraph}</p>)}
+  </div>
+  <div class="profile-placeholder">
+    <img src="/profile1.jpg" alt="Juan Barrero" class="profile-image" />
+
+  </div>
+</section>

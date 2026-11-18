@@ -1,0 +1,6 @@
+---
+interface Props { title: string; level?: 1 | 2 | 3 | 4; }
+const { title, level = 1 } = Astro.props;
+const Tag = `h${level}` as keyof HTMLElementTagNameMap;
+---
+<Tag class={`section-title level-${level}`}>{title}</Tag>

@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import LinkList from '../../components/LinkList.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('posts'))
+  .filter((entry) => !entry.data.draft)
+  .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
+  .map((entry) => ({
+    href: `/posts/${entry.slug}/`,
+    label: entry.data.title,
+    meta: entry.data.date
+  }));
+---
+<BaseLayout title="Posts">
+  <h1 class="simple-page-title">Posts</h1>
+  <LinkList items={posts} />
+  <a class="back-link" href="/">Back to home</a>
+</BaseLayout>
